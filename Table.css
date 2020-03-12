@@ -1,0 +1,8 @@
+tr td {
+    border: 1px solid gray;
+}
+
+td:hover {
+    background-color: rebeccapurple;
+    color: aliceblue;
+}
