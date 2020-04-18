@@ -1,0 +1,39 @@
+#firstdiv {
+    display: flex;
+    justify-content: center;
+
+}
+div{
+    text-align: center;
+}
+#seconddiv {
+        width: 300px;
+        height: 300px;
+
+        margin: auto;
+}
+
+#paragraph {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+tr td:hover{
+    background-color:orangered;
+    font-size: 20px;
+    font-weight: bold;
+}
+tr td a{
+    background-color: forestgreen;
+}
+#NavBar{
+    background-color: wheat;
+}
+table{
+    margin:auto;
+}
+tr td a{
+    color: honeydew;
+}
