@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>One word Guess</title>
+</head>
+<body>
+    <h1> One Word Guess</h1>
+    <div>
+        <p id="hintletters"> </p>
+    <input type="text" id="letterinput"/>
+    <input type="button" id="submitbutton" value="submit" onclick="submit()"/>
+    <p id="result">Result: </p>
+    </div>
+    <img src="https://www.englishclub.com/images/esl-games/hangman-150.png" width="500" height="500">
+    <script>
+        var words = [
+            "Test",
+            "Fraser",
+            "Vmoney",
+            "education",
+            "Malibu",
+            "Taiwan",
+            "Canada"
+        ]
+
+        var textinput = document.getElementById("letterinput")
+        var hintletter = ""
+        console.log(textinput)
+        
+
+        var randomWord = words[Math.floor(Math.random() * words.length)]
+
+        var answerArray = []
+        hintletter = hintletter + randomWord[0]
+        for(let i = 1; i < randomWord.length; i++){
+            answerArray[i] = "_"
+            hintletter = hintletter + " _ "
+        }
+
+        document.getElementById("hintletters").innerText = hintletter
+        var remainingLetters = randomWord.length
+        
+
+        function submit() {
+            let userinput = textinput.value
+            console.log(userinput)
+            if (userinput == randomWord)    {
+                    document.getElementById("result").innerText = "Result: You got it correct"
+              } else {
+            document.getElementById("result").innerText ="Result: You got it incorrect"
+             }   
+        }
+
+
+        // while (remainingLetters > 0) {
+        //     alert(answerArray.join(" "))
+        //     var guess = prompt("guess a letter, or click to stop playing")
+
+            
+        //     if(guess == null) {
+        //         break
+        //     } else if (guess.length != 1) {
+        //         alert("please enter a single letter!!")
+        //     } else {
+        //         for (let j = 0; j < randomWord.length; j ++) {
+        //             if (randomWord [j] == guess) {
+        //                 answerArray[j] = guess
+        //                 remainingLetters -= 1
+        //             }
+        //         }
+        //     }
+        // }
+
+        // aler(answerArray.join(""))
+        // aler("good job!!! The answer was " + randomWord)
+    </script>
+</body>
+
+</html>
