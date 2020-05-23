@@ -37,3 +37,40 @@ table{
 tr td a{
     color: honeydew;
 }
+#introdiv {
+    width:500px;
+    height:500px;
+    word-break: break-all;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#expdiv {
+    width: 500px;
+    height: 500px;
+    word-break: break-all;
+    background-color: wheat;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#edudiv {
+    width: 500px;
+    height: 500px;
+    word-break: break-all;
+    background-color: yellow;
+    color: teal;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#boxcontainer {
+    width: 100vw;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
